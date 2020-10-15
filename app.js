@@ -17,15 +17,16 @@ app.use("/", indexRoutes);
 const http = require('http');
 
 
-/*
-// Start the server on port 3000
-app.listen(3000, '127.0.0.1');
-console.log('Node server running on port 3000');
 
-*/
+// Start the server on port 3000
+// app.listen(3000, '127.0.0.1');
+// console.log('Node server running on port 3000');
+
+
 
 
 app.listen(process.env.PORT, process.env.IP, function(){
     console.log("Server Has Started!");
  });
+ 
  
