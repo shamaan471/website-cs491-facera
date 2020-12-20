@@ -12,7 +12,7 @@ app.set("view engine", "ejs"); //no need to add .ejs when locating ejs files
 app.use(express.static(__dirname + "/public"));
 //app.use(methodOverride("_method")); //this will be used in the froms request
 app.use("/", indexRoutes);
-
+app.use('/pdf', express.static(__dirname + '/assets/Analysis_Report.pdf'));
 
 const http = require('http');
 
@@ -27,6 +27,6 @@ const http = require('http');
 
 app.listen(process.env.PORT, process.env.IP, function(){
     console.log("Server Has Started!");
- });
+});
  
  
