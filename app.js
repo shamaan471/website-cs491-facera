@@ -17,11 +17,9 @@ app.use('/pdf', express.static(__dirname + '/assets/Analysis_Report.pdf'));
 const http = require('http');
 
 
-
 // Start the server on port 3000
 // app.listen(3000, '127.0.0.1');
 // console.log('Node server running on port 3000');
-
 
 
 
