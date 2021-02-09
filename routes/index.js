@@ -56,4 +56,16 @@ router.get('/highLevel_report', (req, res) => {
     }
 })
 
+router.get('/lowLevel_report', (req, res) => {
+    const path = './assets/Low_Level_Report.pdf'
+    if (fs.existsSync(path)) {
+        res.contentType("application/pdf");
+        fs.createReadStream(path).pipe(res)
+    } else {
+        res.status(500)
+        console.log('File not found')
+        res.send('File not found')
+    }
+})
+
 module.exports = router;
