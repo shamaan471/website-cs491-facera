@@ -14,6 +14,8 @@ app.use(express.static(__dirname + "/public"));
 app.use("/", indexRoutes);
 app.use('/pdf', express.static(__dirname + '/assets/Analysis_Report.pdf'));
 
+
+
 const http = require('http');
 
 
